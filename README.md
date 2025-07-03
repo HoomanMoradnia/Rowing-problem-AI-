@@ -26,25 +26,66 @@ A Python-based AI project that visualizes and solves the "rowing problem"—a pa
 
 ## Installation
 
-1. Clone the repository:
+### Windows
+
+1. **Install Python:**  
+   Download and install Python 3.x from [python.org](https://www.python.org/downloads/windows/).  
+   Make sure to check the box "Add Python to PATH" during installation.
+
+2. **Clone the repository:**  
+   Open Command Prompt and run:
    ```bash
    git clone https://github.com/HoomanMoradnia/Rowing-problem-AI-.git
    cd Rowing-problem-AI-
    ```
 
-2. Install dependencies:
+3. **Install Pygame:**  
    ```bash
    pip install pygame
    ```
 
-3. Make sure you have a `sample.json` file representing the river grid and a `Boat.jpg` image in the repo directory.
+4. **Verify additional files:**  
+   Ensure you have `sample.json` (river grid) and `Boat.jpg` (boat image) in the project directory.
+
+5. **Run the application:**  
+   ```bash
+   python AI.py
+   ```
+
+### Linux
+
+1. **Install Python:**  
+   Most Linux distributions come with Python pre-installed. To ensure you have Python 3.x, run:
+   ```bash
+   python3 --version
+   ```
+
+   If Python 3 is not installed, install it (for Ubuntu/Debian):
+   ```bash
+   sudo apt update
+   sudo apt install python3 python3-pip
+   ```
+
+2. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/HoomanMoradnia/Rowing-problem-AI-.git
+   cd Rowing-problem-AI-
+   ```
+
+3. **Install Pygame:**  
+   ```bash
+   pip3 install pygame
+   ```
+
+4. **Verify additional files:**  
+   Ensure you have `sample.json` (river grid) and `Boat.jpg` (boat image) in the project directory.
+
+5. **Run the application:**  
+   ```bash
+   python3 AI.py
+   ```
 
 ## Usage
-
-Run the main script:
-```bash
-python AI.py
-```
 
 - **Menu:** Select BFS, A*, DFS, or generate a random matrix.
 - **Visuals:** The grid, obstacles, and animated solution path will appear in the window.
@@ -61,7 +102,7 @@ python AI.py
 
 - **BFS (Breadth-First Search):** Explores neighbors level by level to find the shortest path.
 - **DFS (Depth-First Search):** Explores as far as possible along each branch before backtracking.
-- **A\* Search:** Uses heuristics (Manhattan distance) for efficient, optimal pathfinding.
+- **A* Search:** Uses heuristics (Manhattan distance) for efficient, optimal pathfinding.
 
 ## License
 
